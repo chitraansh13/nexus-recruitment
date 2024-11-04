@@ -1,0 +1,159 @@
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10% 20%;
+  position: relative;
+  z-index: 1;
+  background: radial-gradient(circle at center, rgba(0, 134, 251, 0.12), rgba(255, 0, 150, 0.075));
+}
+
+.container h1 {
+  font-weight: 500;
+  font-size: 72px;
+  text-shadow: 0 0 10px rgba(0, 36, 67, 0.7);
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.cardsContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 2rem;
+  width: 280px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.cardContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.icon {
+  font-size: 2.5rem;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-align: center;
+  margin: 0;
+}
+
+.modalWrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+  padding: 1rem;
+}
+
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgb(0, 0, 0);
+  backdrop-filter: blur(5px);
+}
+
+.modal {
+  position: relative;
+  background: rgba(20, 20, 40, 0.95);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 3rem;
+  width: 90%;
+  max-width: 600px;
+  z-index: 1000;
+  box-shadow: 0 0 50px rgba(0, 157, 255, 0.2);
+}
+
+.modalContent {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.modalIcon {
+  font-size: 3rem;
+}
+
+.modalTitle {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.modalDescription {
+  text-align: center;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.closeButton {
+  position: absolute;
+  top: -1.5rem;
+  right: -1.5rem;
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: #fff;
+  transition: all 0.2s ease;
+}
+
+.closeButton:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+@media (max-width: 768px) {
+  .container {
+      padding: 10% 5%;
+  }
+
+  .cardsContainer {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .card {
+      width: 100%;
+      max-width: 280px;
+  }
+
+  .modal {
+      width: 95%;
+      padding: 2rem;
+  }
+}
