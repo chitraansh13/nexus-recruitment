@@ -1,0 +1,17 @@
+.cardContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 10% 7%;
+    background-color: #09020A;
+    width: 100vw;
+}
+
+.body h1 {
+    padding-top: 7%;
+    font-weight: 500;
+    font-size: 72px;
+    text-shadow: 0 0 10px rgba(0, 36, 67, 0.7);
+    text-align: center;
+  }

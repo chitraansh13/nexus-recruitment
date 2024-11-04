@@ -1,0 +1,63 @@
+.loaderContainer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #09020A; 
+    z-index: 1000;
+    animation: fadeOut 1s ease 3.5s forwards;
+}
+
+.circle {
+    width: 150px;
+    height: 150px;
+    border: 3px solid transparent;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: circleAppear 1.5s ease 2s forwards;
+}
+
+.letter {
+    font-size: 5rem;
+    font-weight: 900;
+    color: transparent;
+    -webkit-text-stroke: 2px #147BF3; 
+    animation: fillColor 1s ease 1s forwards;
+}
+
+@keyframes fillColor {
+    0% {
+        color: transparent;
+    }
+    100% {
+        color: #147BF3; 
+        -webkit-text-stroke: 0;
+    }
+}
+
+@keyframes circleAppear {
+    0% {
+        border-color: transparent;
+        transform: scale(0.5);
+    }
+    100% {
+        border-color: #147BF3; 
+        transform: scale(1);
+    }
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}

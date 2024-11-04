@@ -18,6 +18,10 @@
   margin-bottom: 60px;
 }
 
+.container h1 a{
+  color: #1579F0;
+}
+
 .cardsContainer {
   display: flex;
   justify-content: center;
