@@ -10,7 +10,6 @@ export default function NavBar() {
           <li><a href="#about">About</a></li>
           <li><a href="#domains">Domains</a></li>
           <li><a href="#events">Events</a></li>
-          <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
     </FadeIn>
